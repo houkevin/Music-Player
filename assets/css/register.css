@@ -1,0 +1,159 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+#background {
+    background-color: #000;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+/* applies to everything in loginContainer div */
+#loginContainer * {
+    color: #fff;
+    font-family: "Helvetica Neve", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 1em;
+    box-sizing: border-box;
+}
+
+#loginContainer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+}
+
+/* Changes all of the placeholder colors to white */
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    color:  #fff;
+}
+#inputContainer {
+    width: 400px;
+    padding: 45px;
+    float: left;
+    border-right: 1px solid #999;
+}
+
+#inputContainer h2 {
+    text-align: center;
+}
+
+/* fills all text email password type
+in inputContainer div */
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
+
+/* applies only to label types in inputContainer */
+#inputContainer label {
+    color: #a0a0a0;
+    font-size: 13px;
+    margin-top: 15px;
+    display: block;
+}
+
+#inputContainer button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    /*round the edges*/
+    border-radius: 250px;
+    color: #fff;
+    /*appear on its own line*/
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    /*20px top and bot auto for left and right
+    auto puts in center of container*/
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
+}
+
+/* targets when hovering over button 
+changes cursor to a pointer */
+#inputContainer button:hover {
+    cursor: pointer;
+}
+
+/* if referencing class use . in front*/
+.hasAccountText span {
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hasAccountText {
+    text-align: center;
+}
+
+/* make it so won't show on initial page load up */
+#registerForm,
+#loginForm {
+    display: none;
+}
+
+/* for the text on the right of login screen */
+#loginText {
+    padding: 45px;
+    display: table-cell;
+}
+
+#loginText h1 {
+    color: #07d159;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#loginText h2 {
+    /* 35px top and bot, 0 on left and right */
+    margin: 35px 0;
+}
+
+#loginText ul {
+    padding: 0;
+}
+
+#loginText li {
+    font-size: 20px;
+    list-style-type: square;
+    padding: 10px;
+}
+
+#inputContainer .errorMessage {
+    color: #07d159;
+    font-size: 12px;
+    display: block;
+}
